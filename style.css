@@ -1,0 +1,82 @@
+body {
+  padding: 0;
+  text-align: center;
+  background-image: url(images/bg.png);
+  background-size: cover;
+  padding: 20px 20px;
+}
+
+.game-intro {
+  float: left;
+  padding: 0% 10%;
+}
+
+.game-intro p {
+  font-size: 20px;
+  font-family: "F1Black";
+  width: 350px;
+  background-color: black;
+  color: white;
+  padding: 10px 40px;
+  border: 0;
+  box-shadow: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-color: red;
+}
+
+.logo-img {
+  width: 400px;
+}
+
+
+body button {
+  font-family: "F1Black";
+  font-size: 35px;
+  background-color: black;
+  color: green;
+  padding: 20px 40px;
+  border: 0;
+  box-shadow: 0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+}
+
+#game-board {
+    float: left;
+    margin: 20px 0px;
+    position: relative;
+}
+
+canvas {
+  border: 1px solid black;
+  background-image: url(images/road.jpg);
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+.scoreboard {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  color: white;
+}
+#gameover-screen {
+  background-color: black;
+  display: none;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+#gameover-screen h2 {
+  color: red;
+}
+#gameover-screen h3 {
+  color: white;
+}

@@ -25,7 +25,6 @@ window.onload = function() {
       moveDownForever(){
          let rock = setInterval(()=>{
           //    each setInterval function gets a unique ID
-          // were using blah here to save this ID
               this.y += 15;
   
               if(this.y > 500){
@@ -38,8 +37,8 @@ window.onload = function() {
   function spawnObstacle(){
     let rX = Math.floor(Math.random() * 200);
     let rY = Math.floor(Math.random() * 200);
-    let rWidth = Math.floor(Math.random() * 10) + 10;
-    let rHeight = Math.floor(Math.random() * 10) + 10;
+    let rWidth = Math.floor(Math.random() * 1) + 10;
+    let rHeight = Math.floor(Math.random() * 35) + 10;
     let obsLoad = new Obstacle(rX, rY, rWidth, rHeight);
     obstacleArray.push(obsLoad);
     obsLoad.moveDownForever();

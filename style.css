@@ -51,14 +51,16 @@ body button {
 
 canvas {
   border: 1px solid black;
-  background-image: url(images/road.jpg);
+  background-image: url(images/road4.png);
   background-repeat: repeat-y;
   background-size: contain;
 }
 .scoreboard {
+  font-family: "F1Black";
+  font-size: 1.5em;
   position: absolute;
-  top: 30px;
-  left: 10px;
+  top: 20px;
+  left: 30px;
   color: white;
 }
 #gameover-screen {

@@ -3,20 +3,21 @@ body {
   text-align: center;
   background-image: url(images/bg.png);
   background-size: cover;
-  padding: 20px 20px;
+  padding: 45px 20px;
 }
 
 .game-intro {
   float: left;
   padding: 0% 10%;
+  border-radius: 20px;
 }
 
 .game-intro p {
   font-size: 20px;
-  font-family: "F1Black";
-  width: 350px;
+  font-family: "Courier New";
+  width: 400px;
   background-color: black;
-  color: white;
+  color: #dcdcdc;
   padding: 10px 40px;
   border: 0;
   box-shadow: 0;
@@ -26,20 +27,20 @@ body {
 }
 
 .logo-img {
-  width: 400px;
+  width: 330px;
 }
 
 
 body button {
-  font-family: "F1Black";
+  font-family: "Courier New";
   font-size: 35px;
   background-color: black;
-  color: green;
+  color: #49fb35;
   padding: 20px 40px;
   border: 0;
   box-shadow: 0;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 
 }
 
@@ -47,6 +48,7 @@ body button {
     float: left;
     margin: 20px 0px;
     position: relative;
+    padding: 1.3%;
 }
 
 canvas {
@@ -56,29 +58,42 @@ canvas {
   background-size: contain;
 }
 .scoreboard {
-  font-family: "F1Black";
+  font-family: "Courier New";
   font-size: 1.5em;
   position: absolute;
-  top: 20px;
-  left: 30px;
+  top: 25px;
+  left: 50px;
   color: white;
 }
+
 #gameover-screen {
   background-color: black;
   display: none;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  width: 100%;
-  height: 500px;
+  width: 97%;
+  height: 510px;
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   z-index: 10;
 }
+
 #gameover-screen h2 {
   color: red;
+  font-family: "Courier New";
+  font-size: 2em;
 }
+
 #gameover-screen h3 {
   color: white;
+  font-family: "Courier New";
+}
+
+.speedDash {
+  font-size: 25px;
+  font-family: "Courier New";
+  width: 500px;
+  font-weight: bold;
 }

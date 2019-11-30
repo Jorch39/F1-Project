@@ -13,21 +13,52 @@
   <div class="game-intro">
     <img src="./images/logo.png" alt="" class="logo-img">
     <br>
+    <p>Instrucciones: 
     <br>
-    <p>Deslizate con los botones de navegación y supera a los demás coches sin chocarlos.</p>
-    <p>¡Acumula puntos y conviértete en el Checo Pérez de la velocidad!-Oficial</p>
+    <br>
+
+    - Deslizate con los botones de navegación (Izquierda y Derecha)
+    <br>
+    <br>
+    - Supera a los demás coches y evita los choques
+    <br>
+    <br>
+    - Acumula la mayor cantidad de puntos!</p>
     <br>
     <br>
     <button id="start-button">Start Game</button>
 
   </div>
+  <div class="dashboard">
+    <span class="speedDash">ROUND: MEXICO CITY - FORO SOL</span>
+  </div>  
+
+  <audio id="f1-theme"  autoplay >
+    <source src="f1.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+  </audio>
+
+  <audio id="crash"  autoplay >
+    <source src="crash.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+  </audio>
+
+  <audio id="cars"  autoplay >
+    <source src="cars.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+  </audio>
+
   <div id="game-board">
-    <div id="gameover-screen"><h2>Game Over!</h2><h3>Your final score is <span id="finalscore">0</span></h3></div>
+    <div id="gameover-screen"><h2>Game Over!</h2>
+      <br>
+      <h3>Your final score is: <span id="finalscore">0</span></h3></div>
     <div class="scoreboard">Score: <span id="score">0</span></div>
       <canvas id="road" width="350" height="500"></canvas>
+
   </div>
+
 </body>
-<script type="text/javascript" src="script.js"></script>
+<!-- <script type="text/javascript" src="script.js"></script> -->
 <script type="text/javascript" src="script-2.js"></script>
-<script type="text/javascript" src="game.js"></script> 
+<!-- <script type="text/javascript" src="game.js"></script> -->
 </html>
